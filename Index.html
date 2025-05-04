@@ -1,72 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: url('7878FD4F-4E24-434D-8835-BC7C30C8F6A0.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .login-container {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 10px;
-      color: white;
-      width: 300px;
-      text-align: center;
-    }
-
-    .login-container h2 {
-      margin-bottom: 20px;
-    }
-
-    .login-container input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .login-container button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background-color: #5a67d8;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    .login-container button:hover {
-      background-color: #434190;
-    }
-  </style>
+  <meta name="description" content="Learn about pyramid schemes, spot the signs, and protect your money from financial scams.">
+  <title>Beware of Pyramid Schemes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Entrar</h2>
-    <form>
-      <input type="text" placeholder="Usuário" required>
-      <input type="password" placeholder="Senha" required>
-      <button type="submit">Login</button>
-    </form>
-  </div>
+  <nav>
+    <div class="logo">Pyramid Scam Alert</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="what.html">What Are They?</a></li>
+      <li><a href="#">Red Flags</a></li>
+      <li><a href="#">Stay Safe</a></li>
+      <li><a href="#">Report</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1><i class="fas fa-exclamation-triangle"></i> Beware of Pyramid Schemes!</h1>
+    <p>Don’t fall for scams promising quick riches. Learn how to spot and avoid them.</p>
+    <a href="what.html" class="btn">Learn More</a>
+  </header>
+  <section class="pyramid-chart">
+    <h2>How Pyramid Schemes Work</h2>
+    <canvas id="pyramidChart"></canvas>
+  </section>
+  <section class="intro">
+    <h2>Protect Your Money</h2>
+    <p>Pyramid schemes are illegal scams that rely on recruiting new members to pay those at the top. Most participants lose money when the scheme collapses. Stay informed and stay safe.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Pyramid Scam Alert. All rights reserved.</p>
+    <p><a href="https://www.ftc.gov">Report scams to authorities</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
